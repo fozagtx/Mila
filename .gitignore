@@ -54,5 +54,8 @@ Thumbs.db
 # ============================================================
 example/
 
-# Local brand notes
+# Local writing, never publish with git
 brand.md
+blog.md
+devpost.md
+DEVPOST.md
