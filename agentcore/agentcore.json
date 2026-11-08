@@ -1,0 +1,30 @@
+{
+  "name": "Mila",
+  "version": 1,
+  "tags": {
+    "agentcore:created-by": "agentcore-cli",
+    "agentcore:project-name": "Mila"
+  },
+  "runtimes": [
+    {
+      "name": "MilaDeal",
+      "build": "Container",
+      "entrypoint": "src/agentcore/runtime.mts",
+      "codeLocation": ".",
+      "buildContextPath": ".",
+      "runtimeVersion": "NODE_22",
+      "networkMode": "PUBLIC",
+      "protocol": "HTTP",
+      "envVars": {
+        "AWS_REGION": "us-west-2",
+        "BEDROCK_MODEL_ID": "amazon.nova-lite-v1:0"
+      }
+    }
+  ],
+  "memories": [],
+  "credentials": [],
+  "payments": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": []
+}
